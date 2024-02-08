@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio - Rashik</title>
+    <meta name = "author" content = "Rashik Koirala">
+    <meta name = "description" content = "CV">
+    <!--linking the css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--links for google fonts used-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!--link for icons used in footer-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--linking the javaScript file-->
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!--HTML for navigation bar-->
+     <nav id="navbar">
+       <div class="container">
+         <a href="index.html"><img src="image/logo.png" class="logo"></a>
+         <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="CV.html">CV</a></li>
+           <li><a href="Blog.html">Blog</a></li>
+           <li><a href="Research.html">Research</a></li>
+           <li><a href="Contact.html">Contact</a></li>
+         </ul>
+       </div>
+     </nav>
+     <!--HTML for CV page section-->
+     <section id="cv">
+       <div class="container">
+         <div class="cv-container">
+           <h1> Photography</h1>
+           <div>
+             <img name="slide" id="slide" class="sliding">
+           </div>
+           <!--inline javaScript for the automatic slideshow photos funtionality-->
+           <script>
+             var i = 0;
+             var images = [];
+             var time = 3000;
+
+             images[0] = "image/slideshow01.jpg";
+             images[1] = "image/slideshow02.jpg";
+             images[2] = "image/slideshow03.jpg";
+             images[3] = "image/slideshow04.jpg";
+             images[4] = "image/slideshow05.jpg";
+
+             function slideshow() {
+               document.getElementById("slide").src = images[i];
+
+               if (i < images.length - 1) {
+                 i++;
+               } else {
+                 i = 0;
+               }
+
+               setTimeout("slideshow()", time);
+             }
+
+             window.onload = slideshow;
+
+           </script>
+           <!--about me section-->
+           <h1>About me</h1>
+           <p>My name is Rashik Koirala. I am 19 years old.  I live and work in Pokhara, Nepal.
+             Currently I'm studying in informatics college. I love designing, Photography, video editing,
+             direction and cinematography. I have worked on many projects. I am currently unemployed and
+             looking for work, if you like what you see so far, please contact me from the Contact Page
+             and we can discuss further.</p>
+
+           <h1>Education</h1>
+           <!--table for my acadamic qualifications-->
+           <table>
+             <tr>
+               <th>Level</th>
+               <th>Organization</th>
+               <th>Grade</th>
+             </tr>
+             <tr>
+               <td>SEE</td>
+               <td>Kumudini Homes</td>
+               <td>A+</td>
+             </tr>
+             <tr>
+               <td>+2</td>
+               <td>Liverpool college</td>
+               <td>A</td>
+             </tr>
+             <tr>
+               <td>Bachelor</td>
+               <td>Infomatics college</td>
+               <td>N/A</td>
+             </tr>
+           </table>
+         </div>
+       </div>
+     </section>
+     <!--HTML for footer section-->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-elements">
+          <p>&copy; Designed By Rashik Koirala</p>
+          <ul>
+            <li><a href="https://www.facebook.com/rashik.koirala.5" target="_blank"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/rashik_koirala/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://twitter.com/rashik_koirala" target="_blank"><i class="bi bi-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <img src="image/top.png" onclick="topScreen()" id="goTopButton">
+  </body>
+</html>

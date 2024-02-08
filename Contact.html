@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio - Rashik</title>
+    <meta name = "author" content = "Rashik Koirala">
+    <meta name = "description" content = "Contact">
+    <!--linking the css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--links for google fonts used-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!--link for icons used in footer-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--linking the javaScript file-->
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!--HTML for navigation bar-->
+     <nav id="navbar">
+       <div class="container">
+         <a href="index.html"><img src="image/logo.png" class="logo"></a>
+         <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="CV.html">CV</a></li>
+           <li><a href="Blog.html">Blog</a></li>
+           <li><a href="Research.html">Research</a></li>
+           <li><a href="Contact.html">Contact</a></li>
+         </ul>
+       </div>
+     </nav>
+     <!--HTML for the contact page section-->
+     <section id="contact">
+       <div class="container">
+         <div class="contact-container">
+           <h1>Contact Me</h1>
+           <!--form tag for the form functionality-->
+           <form onsubmit="validateForm()" name="messageForm">
+             <div class="firstline">
+               <div class="form-FirstName">
+                 <input type="text" name="fname" placeholder="First Name*" id="Fname">
+               </div>
+               <div class="form-LastName">
+                 <input type="text" name="lname" placeholder="Last Name*" id="Lname">
+               </div>
+             </div>
+             <div class="secondline">
+               <div class="form-Email">
+                 <input type="text" name="email" placeholder="Email*" id="Email">
+               </div>
+               <div class="form-PhoneNumber">
+                 <input type="text" name="phoneNumber" placeholder="Phone Number" id="PhoneNumber">
+               </div>
+             </div>
+             <div class="form-Message">
+               <textarea placeholder="Write a message for me." name="message" ></textarea id="Message">
+             </div>
+             <div class="form-Submit">
+               <input type="submit" value="Submit">
+             </div>
+         </div>
+       </div>
+     </section>
+     <!--HTML for footer section-->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-elements">
+          <p>&copy; Designed By Rashik Koirala</p>
+          <ul>
+            <li><a href="https://www.facebook.com/rashik.koirala.5" target="_blank"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/rashik_koirala/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://twitter.com/rashik_koirala" target="_blank"><i class="bi bi-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <img src="image/top.png" onclick="topScreen()" id="goTopButton">
+  </body>
+</html>

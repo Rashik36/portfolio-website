@@ -1,0 +1,375 @@
+/*External css for the website*/
+
+/*global css properties*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url("../image/background.jpg");
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+.container{
+  width: 70%;
+  margin: auto;
+}
+
+.logo{
+  width:5%;
+  height:auto;
+}
+
+#navbar{
+  background-color: white;
+}
+
+#navbar ul{
+  float:right;
+}
+
+#navbar ul li{
+  display:inline-block;
+  padding-top: 11px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bolder;
+}
+
+#navbar ul li a {
+  display: block;
+	color: black;
+	font-size: 14px;
+	padding: 14px 25px;
+	text-decoration: none;
+}
+
+#navbar ul li a:hover {
+	background: #7d7979;
+  color: white;
+	transition: 0.4s;
+}
+
+#footer {
+  background-color: white;
+  height:60px;
+  margin-top: 50px;
+}
+
+.footer-elements{
+  position: relative;
+  padding-top: 4px;
+}
+
+.footer-elements p{
+  color: black;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.footer-elements ul{
+  list-style: none;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
+
+.footer-elements ul li{
+  display:inline;
+}
+
+.footer-elements a{
+  color: black;
+  padding-right: 30px;
+}
+
+#goTopButton {
+  position: fixed;
+  bottom: 12px;
+  right: 130px;
+  width: 50px;
+  height: auto;
+}
+
+#goTopButton:hover {
+  opacity: 50%;
+}
+
+/*global css properties ends here*/
+
+/*homepage properties*/
+
+#homepage-section h1{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  size: 14%;
+  color: white;
+  margin-top: 3%;
+  letter-spacing: 2px;
+}
+
+#homepage-section p{
+  text-align:left;
+  font-family: 'Roboto Slab', serif;
+  size: 8%;
+  margin-top: 7%;
+  color: white;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+/* homepage properties ends here*/
+
+/*CV page properties*/
+
+.cv-container{
+  background-color: white;
+  height: 1300px;
+  width: 900px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.sliding {
+  height: auto;
+  width: 900px;
+}
+
+#cv h1{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  size: 14%;
+  color: black;
+  margin-top: 3%;
+  letter-spacing: 2px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#cv th{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  size: 14%;
+  color: black;
+  margin-top: 3%;
+  letter-spacing: 1.5px;
+}
+
+#cv p{
+  text-align:left;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  size: 8%;
+  color: black;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#cv td{
+  text-align:center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  size: 8%;
+  color: black;
+  letter-spacing: 0.5px;
+}
+
+#cv table{
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+#cv td, th {
+  border: 1px solid black;
+  padding: 10px 70px 10px 70px;
+}
+
+/*CV page properties end here*/
+
+/*contact page properties*/
+
+.contact-container{
+  background-color: white;
+  height: 1000px;
+  width: 900px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+#contact h1{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  size: 14%;
+  color: black;
+  margin-top: 5%;
+  letter-spacing: 2px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+#contact .contact-container form{
+  margin-top: 100px;
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact .firstline, .secondline {
+  display: inline-flex;
+  margin-bottom: 50px;
+}
+
+#contact .form-FirstName input{
+  margin-right: 50px;
+  width: 300px;
+  height: 40px;
+  padding-left: 6px;
+}
+
+#contact .form-LastName input{
+  width: 300px;
+  height: 40px;
+  padding-left: 6px;
+}
+
+#contact .form-Email input{
+  margin-right: 50px;
+  width: 300px;
+  height: 40px;
+  padding-left: 6px;
+}
+
+#contact .form-PhoneNumber input{
+  width: 300px;
+  height: 40px;
+  padding-left: 6px;
+}
+
+#contact .form-Message textarea{
+  width: 650px;
+  height: 300px;
+  padding-left: 6px;
+  padding-top: 5px;
+  font-size: 15px;
+}
+
+#contact .form-Submit input{
+  margin-left: 40%;
+  margin-top: 50px;
+  border: none;
+  background-color: #d6d6d6;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#contact .form-Submit input:hover{
+  background-color: #2d579c;
+  color: white;
+	transition: 0.4s;
+}
+
+/*contact page properties ends here.*/
+
+/*css properties for Research page*/
+
+.research-container{
+  background-color: white;
+  height: 2510px;
+  width: 1300px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+#research h1{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  size: 14%;
+  color: black;
+  margin-top: 3%;
+  letter-spacing: 2px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#research table{
+  border-collapse: collapse;
+}
+
+#research td{
+  text-align:center;
+  align-content: center;
+  font-family: 'Roboto', sans-serif;
+  size: 14%;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0.5px;
+  border: 1px solid black;
+  padding: 50px 10px 50px 10px;
+}
+
+/*css properties for research page ends here*/
+
+/*css properties for blog page*/
+
+.blog-container{
+  background-color: white;
+  height: 1400px;
+  width: 900px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.inside-blog{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#blog h1{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  size: 14%;
+  color: black;
+  padding-top: 50px;
+  letter-spacing: 2px;
+}
+
+#blog p{
+  text-align:left;
+  font-family: 'Roboto Slab', serif;
+  size: 8%;
+  margin-top: 7%;
+  color: black;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+
+#readButton{
+  border: none;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+#readButton:hover{
+  background-color: #2d579c;
+  color: white;
+	transition: 0.4s;
+}
+
+#hide{
+  display: none;
+}
+
+/*css properties for blog page ends here*/

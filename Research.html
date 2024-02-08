@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio - Rashik</title>
+    <meta name = "author" content = "Rashik Koirala">
+    <meta name = "description" content = "Research">
+    <!--linking the css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--links for google fonts used-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!--link for icons used in footer-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--linking the javaScript file-->
+    <script src="js/script.js"></script>
+    <!--internal css for the images used and the anchor tag-->
+    <style>
+      #research img{
+        width: 630px;
+        height: auto;
+      }
+
+      #research a{
+        text-decoration: none;
+        text-decoration: underline;
+        color: black;
+      }
+
+      #research a:hover{
+        color: #f71e1e;
+      }
+    </style>
+  </head>
+  <body>
+     <!--HTML for navigation bar-->
+     <nav id="navbar">
+       <div class="container">
+         <a href="index.html"><img src="image/logo.png" class="logo"></a>
+         <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="CV.html">CV</a></li>
+           <li><a href="Blog.html">Blog</a></li>
+           <li><a href="Research.html">Research</a></li>
+           <li><a href="Contact.html">Contact</a></li>
+         </ul>
+       </div>
+     </nav>
+     <!--HTML for Research page section-->
+     <section id="research">
+        <div class="research-container">
+           <h1>Research</h1>
+           <!--table tag used to show the comparison between referenced webites and this website-->
+           <table>
+             <tr>
+               <td><img src="image/nav01.png">
+                 Navigation and header of the referenced website.<br/><br/>
+                 <a href="https://www.roundtheplace.com/" target="_blank">Go to site</a>
+               </td>
+               <td><img src="image/nav02.png">
+                 Navigation and header of this website.<br/><br/><br/>
+               </td>
+             </tr>
+             <tr>
+               <td><img src="image/profile01.png">
+                 Style of the profile photo of the referenced website.<br/><br/>
+                 <a href="https://dayahangrai.com.np/" target="_blank">Go to site</a>
+               </td>
+               <td><img src="image/profile02.png">
+                 Style of the profile photo of this website.<br/><br/><br/>
+               </td>
+             </tr>
+             <tr>
+               <td><img src="image/gototop01.png">
+                 Go to top button of the referenced website.<br/><br/>
+                 <a href="https://studioschurk.nl/#top" target="_blank">Go to site</a>
+               </td>
+               <td><img src="image/gototop02.png">
+                 Go to top button of this website.<br/><br/><br/>
+               </td>
+             </tr>
+             <tr>
+               <td><img src="image/footerlogo01.png">
+                 Layout of the footer and the logo used of the referenced website.<br/><br/>
+                 <a href="https://zyro.com/preview/eren" target="_blank">Go to site</a>
+               </td>
+               <td><img src="image/footerlogo02.png">
+                 Layout of the footer and the logo used of this website.<br/><br/><br/>
+               </td>
+             </tr>
+             <tr>
+               <td><img src="image/contact01.png">
+                 Contact page layout of the referenced website.<br/><br/>
+                 <a href="https://mediaproper.com/contact-us/" target="_blank">Go to site</a>
+               </td>
+               <td><img src="image/contact02.png">
+                 Contact page layout of this website.<br/><br/><br/>
+               </td>
+             </tr>
+           </table>
+        </div>
+     </section>
+     <!--HTML for footer section-->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-elements">
+          <p>&copy; Designed By Rashik Koirala</p>
+          <ul>
+            <li><a href="https://www.facebook.com/rashik.koirala.5" target="_blank"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/rashik_koirala/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://twitter.com/rashik_koirala" target="_blank"><i class="bi bi-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <img src="image/top.png" onclick="topScreen()" id="goTopButton">
+  </body>
+</html>
